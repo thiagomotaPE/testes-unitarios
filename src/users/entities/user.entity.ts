@@ -10,4 +10,10 @@ export class User {
 
   @Column()
   sobrenome: string;
+
+  constructor(user?: Partial<User>) {
+    this.id = user?.id;
+    this.nome = user?.nome;
+    this.sobrenome = user?.sobrenome;
+  }
 }
