@@ -2,7 +2,6 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { UsersController } from '../users.controller';
 import { UsersService } from '../users.service';
 import { User } from '../entities/user.entity';
-import { Body } from '@nestjs/common';
 import { CreateUserDto } from '../dto/create-user.dto';
 
 const usersList: User[] = [
